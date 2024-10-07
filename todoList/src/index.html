@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo list</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <main class="flex items-center justify-center py-5 w-full flex-col">
+      <h1 class="text-2xl font-semibold font-mono">Todo list</h1>
+      <div class="flex items-center justify-center flex-col">
+        <div class="my-4 border px-4 py-2 rounded-full shadow-lg">
+          <input
+            placeholder="add todo..."
+            class="outline-none border-none bg-transparent focus:bg-transparent"
+            type="text"
+            name="doto"
+            id="doto"
+          />
+          <button
+            id="doto-add-btn"
+            class="border px-4 py-2 rounded-full shadow-lg outline-none border-none"
+          >
+            add
+          </button>
+        </div>
+
+        <ul id="list-of-todos">
+          <!-- <li class="border px-4 py-2 rounded-full shadow-lg flex items-center gap-3 justify-between">
+            gkjkjkjllljjlklm,m,
+            <button class="border px-4 py-2 rounded-full shadow-lg ">
+              edit
+            </button>
+            <button class="border px-4 py-2 rounded-full shadow-lg">
+              remove
+            </button>
+          </li> -->
+        </ul>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

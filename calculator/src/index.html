@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="flex items-center justify-center w-screen h-screen flex-col">
+      <h1 class="font-bold text-2xl font-mono pb-4">Calculator</h1>
+      <div class="display bg-[#384450] px-4 rounded-xl w-[70%] sm:w-[35%] pb-4">
+        <input
+          type="text"
+          name="display"
+          id="display"
+          class="w-full h-10 shadow-gray-300 shadow-inner rounded-lg my-4 pb-1 text-white font-semibold bg-[#384450] tracking-widest text-right pr-3"
+        />
+        <section
+          class="btn-section text-white flex flex-col gap-3 items-center justify-center"
+        >
+          <div class="w-full grid grid-cols-4 gap-2">
+            <input
+              type="button"
+              value="AC"
+              onclick="clearValue()"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+            />
+            <input
+              type="button"
+              value="DE"
+              onclick="removeLastValue()"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="displayValue('.')"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="displayValue('/')"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+            />
+          </div>
+          <div class="w-full grid grid-cols-4 gap-2">
+            <input
+              type="button"
+              value="7"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue(7)"
+            />
+            <input
+              type="button"
+              value="8"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue(8)"
+            />
+            <input
+              type="button"
+              value="9"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue(9)"
+            />
+            <input
+              type="button"
+              value="*"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue('*')"
+            />
+          </div>
+          <div class="w-full grid grid-cols-4 gap-2">
+            <input
+              type="button"
+              value="4"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue(4)"
+            />
+            <input
+              type="button"
+              value="5"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue(5)"
+            />
+            <input
+              type="button"
+              value="6"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue(6)"
+            />
+            <input
+              type="button"
+              value="-"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue('-')"
+            />
+          </div>
+          <div class="w-full grid grid-cols-4 gap-2">
+            <input
+              type="button"
+              value="1"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue(1)"
+            />
+            <input
+              type="button"
+              value="2"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue(2)"
+            />
+            <input
+              type="button"
+              value="3"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue(3)"
+            />
+            <input
+              type="button"
+              value="+"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue('+')"
+            />
+          </div>
+          <div class="w-full grid grid-cols-3 gap-2">
+            <input
+              type="button"
+              value="00"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue('00')"
+            />
+            <input
+              type="button"
+              value="0"
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="displayValue('0')"
+            />
+            <input
+              type="button"
+              value="="
+              class="shadow-gray-500 shadow-inner p-2 rounded-md"
+              onclick="dataEval()"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
